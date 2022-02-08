@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  web:
+    # image: nginx-thing
+    build:
+      context: ./docker/nginx
+      dockerfile: Dockerfile
+    ports:
+      - "9999:80"
